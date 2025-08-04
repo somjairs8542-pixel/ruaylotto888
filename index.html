@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>กรอกโพยหวย</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>กรอกโพยหวย</h2>
+  <input type="text" id="type" placeholder="ประเภท (บน, ล่าง, โต๊ด)">
+  <input type="text" id="number" placeholder="เลข">
+  <input type="number" id="amount" placeholder="จำนวนเงิน">
+  <button onclick="addEntry()">เพิ่ม</button>
+
+  <div id="entryList"></div>
+
+  <label>งวดวันที่:</label>
+  <input type="date" id="drawDate">
+  <button onclick="submitLotto()">ส่งโพย</button>
+
+  <script src="scripts/firebase-config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database-compat.js"></script>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
